@@ -1,56 +1,56 @@
-# 有道词典发音下载工具
+# Word Pronunciation Downloader
 
-这是一个简单的Python工具，用于从有道词典下载单词的发音MP3文件。
+A simple Python tool for downloading word pronunciation MP3 files from online dictionaries.
 
-## 功能
+## Features
 
-- 通过控制台输入单词，多个单词用逗号分隔
-- 自动从有道词典获取单词的发音
-- 支持选择美式发音或英式发音
-- 将MP3文件下载到本地指定目录
+- Input words through console, multiple words separated by commas
+- Automatically fetch word pronunciations from online sources
+- Support for both American and British pronunciation options
+- Download MP3 files to a local directory
 
-## 使用方法
+## Usage
 
-1. 安装依赖项：
+1. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
 
-2. 运行程序：
+2. Run the program:
    ```
    python main.py
    ```
 
-3. 按照提示输入单词、保存目录和发音类型
+3. Follow the prompts to input words, save directory, and pronunciation type
 
-## 示例
+## Example
 
 ```
-欢迎使用有道词典发音下载工具
-请输入要下载发音的单词，多个单词用逗号分隔
-单词: hello, world, python
+Welcome to Word Pronunciation Downloader
+Please enter words to download, separated by commas
+Words: hello, world, python
 
-请输入保存目录 (默认为 'pronunciations'): 
+Enter save directory (default is 'pronunciations'): 
 
-请选择发音类型:
-1. 美式发音
-2. 英式发音
-请输入选项 (默认为美式发音): 1
+Select pronunciation type:
+1. American
+2. British
+Enter option (default is American): 1
 
-正在处理单词: hello
-已下载 'hello' 的发音到 pronunciations/hello.mp3
+Processing word: hello
+Downloaded 'hello' pronunciation to pronunciations/hello.mp3
 
-正在处理单词: world
-已下载 'world' 的发音到 pronunciations/world.mp3
+Processing word: world
+Downloaded 'world' pronunciation to pronunciations/world.mp3
 
-正在处理单词: python
-已下载 'python' 的发音到 pronunciations/python.mp3
+Processing word: python
+Downloaded 'python' pronunciation to pronunciations/python.mp3
 
-下载完成! 成功下载 3/3 个单词的发音
+Download complete! Successfully downloaded 3/3 word pronunciations
 ```
 
-## 注意事项
+## Notes
 
-- 程序会在每次请求之间添加1秒的延迟，以避免被有道词典封IP
-- 默认保存目录为当前目录下的"pronunciations"文件夹
-- 程序使用有道词典的公开API，如果API变更可能会导致程序失效
+- The program adds a 1-second delay between requests to avoid IP blocking
+- Default save directory is "pronunciations" folder in the current directory
+- This program uses public APIs which may change over time
